@@ -29,5 +29,6 @@ apt-get -y install docker-ce
 RUN apt-get install -y docker-ce
 
 RUN usermod -a -G docker jenkins
+RUN sudo chmod 777 /var/run/docker.sock
 
 USER jenkins
